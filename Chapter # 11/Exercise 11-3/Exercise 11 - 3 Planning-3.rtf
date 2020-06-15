@@ -1,0 +1,83 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica-BoldOblique;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-Oblique;\f4\fnil\fcharset0 ArialUnicodeMS;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\vieww13900\viewh14600\viewkind0
+\deftab720
+\pard\pardeftab720\sa200\qc\partightenfactor0
+
+\f0\b\fs28 \cf0 Account UML\
+\
+
+\f1\i \ul SupperAccount\
+
+\f2\i0\b0 \ulnone \
+\pard\pardeftab720\sa200\partightenfactor0
+\cf0 Attributes:\
+- id : int\
+- balance : double\
+- annualInterestRate : double\
+- dateCreated : java.util.Date\
+\
+Constructors:
+\f3\i \ul \
+
+\f2\i0 \ulnone + Account( )\
++ Account( accountId : int, accountBalance : double, accountAnnualInterestRate : double )\
+\
+Methods:\
++ getId() : int\
++ getBalance() : double\
++ getAnnualInterestRate() : double\
++ getDateCreated() : java.util.Date\
++ setId(accountId : int) : void\
++ setBalance( accountBalance : double ) : void\
++ setAnnualInterestRate( accountAnnualInterestRate : double ) : void\
++ setDateCreated( java.util.Date ) : void\
++ withdraw( withdrawAmount : double )\
++ deposit( depositAmount : double) \
++ toString() : String\
+\pard\pardeftab720\sa200\qc\partightenfactor0
+
+\f4 \cf0 \uc0\u8593 
+\f2 \
+2 subclasses\
+\pard\pardeftab720\sa200\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sa200\qc\partightenfactor0
+
+\f0\b \cf0 \ul \ulc0 CheckingAccount\
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f2\b0 \cf0 \ulnone Attributes:\
+- overDraftLimit : double\
+\
+Constructors:\
++ CheckingAccount()\
++ CheckingAccount( checkingId : int, checkingBalance : double, overDraftLimit : double )\
+\
+Methods:\
++ getOverDraftLimit() : double\
++ withdraw( withdrawAmount : double )\
++ deposit( depositAmount : double)\
++ toString() : String\
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b \cf0 \ul \
+\pard\pardeftab720\sa200\qc\partightenfactor0
+\cf0 SavingsAccount
+\f2\b0 \ulnone \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f0\b \cf0 \ul \
+\pard\pardeftab720\sa200\partightenfactor0
+
+\f2\b0 \cf0 \ulnone Constructors:\
++ SavingsAccount()\
++ SavingsAccount( savingsId : int, savingsBalance : double )\
+\
+Methods;\
++ withdraw( withdrawAmount : double )\
++ deposit( depositAmount : double)\
++ toString() : String}
